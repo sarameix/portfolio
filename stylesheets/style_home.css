@@ -1,3 +1,53 @@
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 h1 {
-    text-decoration: underline;
+    color: rgb(233, 233, 233);
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.nav {
+    padding: 1em;
+}
+
+.social-media {
+    cursor: pointer;
+    margin: 0.5em 1em;
+}
+
+#home-button {
+    width: 100px;
+}
+
+#pages-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#img-swap {
+}
+
+#art-image {
+    width: 100%;
+}
+
+#name-text {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
 }
