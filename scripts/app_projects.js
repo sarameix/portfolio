@@ -18,7 +18,7 @@ const toggleBurger = () => {
     // Toggle Menu Panel Based on Global Boolean Variable
     if(isHiddenMenu){ // If Menu Hidden
         // Show Menu Panel
-        $burgerMenuPanel.show(1000)
+        $burgerMenuPanel.show(1000);
 
         // Toggle Buttons
         $('.hamburger-icon').css('display', 'none');

@@ -2,8 +2,13 @@
 /* Standard HTML Tags */
 /**********************/
 
+body {
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
 header {
     height: 100px;
+    text-transform: uppercase;
 }
 
 footer {
@@ -52,14 +57,15 @@ p {
 }
 
 .nav {
+    color: rgb(33, 110, 183);
     font-size: 30px;
     padding: 0 1em;
-    margin-top: 33px;
+    margin-top: 25px;
     display: block;
 }
 
 .nav:hover {
-    color: rgb(50, 125, 196);;
+    color: rgb(199, 83, 156);
 }
 
 #gradient-header {
@@ -80,6 +86,10 @@ p {
     text-align: right;
     display: block;
     margin: 0 20px 0 0;
+}
+
+.hamburger-nav:hover {
+    color: rgb(253, 101, 197);
 }
 
 .hamburger-nav:first-of-type {
@@ -170,8 +180,14 @@ p {
 /**********/
 
 .social-media {
+    color: rgb(33, 110, 183);
+    font-size: 20px;
     cursor: pointer;
     margin: 0.5em 1em;
+}
+
+.social-media:hover {
+    color: rgb(199, 83, 156);
 }
 
 #gradient-footer {
