@@ -1,5 +1,13 @@
-console.log('jQuery is working!');
+/////////////////////////////////////
+// * GLOBAL VARIABLE DECLARATION * //
+/////////////////////////////////////
+
+// Variable Tracking if Hamburger Menu is Open
 let isHiddenMenu = true;
+
+//////////////////////////////
+// * FUNCTION DECLARATION * //
+//////////////////////////////
 
 // Function to Toggle Hamburger Menu
 const toggleBurger = () => {
@@ -15,6 +23,10 @@ const toggleBurger = () => {
         isHiddenMenu = true;
     }
 }
+
+////////////////////////////
+// * EXECUTE AFTER LOAD * //
+////////////////////////////
 
 // Wait for HTML to Load to Run This
 $(() => {

@@ -21,6 +21,7 @@ a {
 
 .nav {
     padding: 1em;
+    display: none;
 }
 
 .hamburger-nav {
