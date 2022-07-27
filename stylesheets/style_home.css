@@ -36,6 +36,13 @@ a {
     margin-top: 125px;
 }
 
+.divider {
+    background-color: white;
+    width: 70%;
+    height: 1px;
+    margin: 0 0 0 60px;
+}
+
 #hamburger-menu-button {
     position: absolute;
     right: 18px;
@@ -61,9 +68,9 @@ a {
     border-radius: 10%;
 }
 
-#hamburger-menu-background {
+#hamburger-menu-panel {
     position: absolute;
-    right: 0px;
+    right: -300px;
     top: 0px;
     width: 300px;
     height: 100%;

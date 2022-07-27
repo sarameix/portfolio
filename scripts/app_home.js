@@ -1,12 +1,18 @@
 console.log('jQuery is working!');
+let isHiddenMenu = true;
 
 // Function to Toggle Hamburger Menu
 const toggleBurger = () => {
-    const $burgerMenuPanel = $('#hamburger-menu-background');
-    if($burgerMenuPanel.is(':visible')){
-        $burgerMenuPanel.hide("slide", {direction: "right"}, 1000);
-    } else {
-        $burgerMenuPanel.show();
+    // Getting Hamburger Menu Panel Element
+    const $burgerMenuPanel = $('#hamburger-menu-panel');
+    const $burgerMenuWidth = $burgerMenuPanel.width();
+    // Toggle Menu Panel Based on Global Boolean Variable
+    if(isHiddenMenu){ // If Menu Hidden
+        $burgerMenuPanel.animate({'right': 0}, 600, 'swing');
+        isHiddenMenu = false;
+    } else { // If Menu Visible
+        $burgerMenuPanel.animate({'right': -$burgerMenuWidth}, 450, 'swing');
+        isHiddenMenu = true;
     }
 }
 
