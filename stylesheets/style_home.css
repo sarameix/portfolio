@@ -15,7 +15,7 @@ h1 {
 
 a {
     text-decoration: none;
-
+    color: black;
 }
 
 .nav {
@@ -38,8 +38,24 @@ a {
     align-items: center;
 }
 
-#img-swap {
+#gradient-header {
+    height: 2px;
+    width: 100%;
+    margin: 14px 0 18px 0;
+    background-color: rgb(58, 58, 58);
 }
+
+#gradient-footer {
+    height: 2px;
+    width: 100%;
+    margin: 18px 0 14px 0;
+    background-color: rgb(58, 58, 58);
+}
+
+#img-swap {
+    position: relative;
+}
+
 
 #art-image {
     width: 100%;
@@ -49,5 +65,5 @@ a {
     position: absolute;
     top: 50%;
     left: 25%;
-    transform: translate(-50%, -50%);
+    transform: translate(-0%, -0%);
 }
