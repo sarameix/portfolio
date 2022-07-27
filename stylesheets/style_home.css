@@ -1,6 +1,4 @@
 header {
-    /* display: flex;
-    justify-content: space-between; */
     height: 100px;
 }
 
@@ -71,6 +69,7 @@ a {
 
 #hamburger-menu-panel {
     position: absolute;
+    display: none;
     right: -300px;
     top: 0px;
     width: 300px;
