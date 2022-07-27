@@ -16,7 +16,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 10;
+    z-index: 2;
 }
 
 footer {
@@ -92,7 +92,7 @@ a {
     margin: 0px 0 18px 0;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 6px 7px rgba(31, 32, 33, 0.657);
-    z-index: 9;
+    z-index: 1;
 }
 
 /*****************************/
@@ -124,7 +124,7 @@ a {
 }
 
 #hamburger-menu-button {
-    position: absolute;
+    position: fixed;
     right: 18px;
     top: 18px;
     width: 80px;
@@ -137,7 +137,7 @@ a {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    z-index: 3;
+    z-index: 10;
 }
 
 .hamburger-icon {
@@ -174,7 +174,7 @@ a {
 }
 
 #hamburger-menu-panel {
-    position: absolute;
+    position: fixed;
     display: none;
     top: 0px;
     right: 0px;
@@ -193,6 +193,7 @@ a {
     justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
+    z-index: 0;
 }
 
 .project {

@@ -125,7 +125,7 @@ p {
 }
 
 #hamburger-menu-button {
-    position: absolute;
+    position: fixed;
     right: 18px;
     top: 18px;
     width: 80px;
@@ -138,7 +138,7 @@ p {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    z-index: 3;
+    z-index: 10;
 }
 
 .hamburger-icon {
@@ -175,7 +175,7 @@ p {
 }
 
 #hamburger-menu-panel {
-    position: absolute;
+    position: fixed;
     display: none;
     top: 0px;
     right: 0px;
