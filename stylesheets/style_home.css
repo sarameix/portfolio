@@ -1,3 +1,7 @@
+/**********************/
+/* Standard HTML Tags */
+/**********************/
+
 header {
     height: 100px;
 }
@@ -17,10 +21,45 @@ a {
     color: black;
 }
 
-.nav {
-    padding: 1em;
-    display: none;
+/***************************/
+/* Desktop Navigation Menu */
+/***************************/
+
+#home-button {
+    width: 100px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
 }
+
+#pages-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav {
+    font-size: 30px;
+    padding: 0 1em;
+    margin-top: 33px;
+    display: block;
+}
+
+.nav:hover {
+    color: rgb(50, 125, 196);;
+}
+
+#gradient-header {
+    height: 2px;
+    width: 100%;
+    margin: 14px 0 18px 0;
+    background-color: rgb(58, 58, 58);
+}
+
+/*****************************/
+/* Hamburger Navigation Menu */
+/*****************************/
 
 .hamburger-nav {
     color: white;
@@ -51,7 +90,7 @@ a {
     background-color: rgb(50, 125, 196);
     border-radius: 8px;
     border: 1px solid white;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -96,44 +135,16 @@ a {
     position: absolute;
     display: none;
     top: 0px;
+    right: 0px;
     width: 300px;
     height: 100%;
     background-color: rgb(50, 125, 196);
     z-index: 2;
 }
 
-.social-media {
-    cursor: pointer;
-    margin: 0.5em 1em;
-}
-
-#home-button {
-    width: 100px;
-    position: absolute;
-    left: 10px;
-    top: 10px;
-}
-
-#pages-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-#gradient-header {
-    height: 2px;
-    width: 100%;
-    margin: 14px 0 18px 0;
-    background-color: rgb(58, 58, 58);
-}
-
-#gradient-footer {
-    height: 2px;
-    width: 100%;
-    margin: 18px 0 14px 0;
-    background-color: rgb(58, 58, 58);
-}
+/***********************/
+/* Image Swap Elements */
+/***********************/
 
 #img-swap {
     position: relative;
@@ -149,4 +160,34 @@ a {
     top: 50%;
     left: 25%;
     transform: translate(-0%, -0%);
+}
+
+/**********/
+/* Footer */
+/**********/
+
+.social-media {
+    cursor: pointer;
+    margin: 0.5em 1em;
+}
+
+#gradient-footer {
+    height: 2px;
+    width: 100%;
+    margin: 18px 0 14px 0;
+    background-color: rgb(58, 58, 58);
+}
+
+/*****************/
+/* Media Queries */
+/*****************/
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+    #hamburger-menu-button {
+        display: flex;
+    }
 }
