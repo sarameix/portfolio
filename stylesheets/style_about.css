@@ -69,10 +69,12 @@ p {
 }
 
 #gradient-header {
-    height: 2px;
+    height: 6px;
     width: 100%;
     margin: 14px 0 18px 0;
-    background-color: rgb(58, 58, 58);
+    margin-bottom: 30px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 6px 7px rgb(120, 122, 127);
 }
 
 /*****************************/
@@ -183,7 +185,7 @@ p {
     color: rgb(33, 110, 183);
     font-size: 20px;
     cursor: pointer;
-    margin: 0.5em 1em;
+    margin: 0 1em .6em 1em;
 }
 
 .social-media:hover {
@@ -191,10 +193,11 @@ p {
 }
 
 #gradient-footer {
-    height: 2px;
+    height: 6px;
     width: 100%;
-    margin: 18px 0 14px 0;
-    background-color: rgb(58, 58, 58);
+    margin: 30px 0 18px 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px -6px 7px rgb(154, 157, 163);
 }
 
 /*****************/
