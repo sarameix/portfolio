@@ -17,17 +17,26 @@ const toggleBurger = () => {
 
     // Toggle Menu Panel Based on Global Boolean Variable
     if(isHiddenMenu){ // If Menu Hidden
-        $burgerMenuPanel.css('display', 'block');
-        $burgerMenuPanel.animate({'right': 0}, 600, 'swing');
+        // Show Menu Panel
+        $burgerMenuPanel.show(1000)
+
+        // Toggle Buttons
+        $('.hamburger-icon').css('display', 'none');
+        $('#X1').css('display', 'block');
+        $('#X2').css('display', 'block');
+
+        // Change Boolean
         isHiddenMenu = false;
     } else { // If Menu Visible
-        // Found Code for Next 3 Lines on Stack Overflow
-        // Used to Delay Changing Display to Hidden in Panel's CSS
-        // https://stackoverflow.com/questions/5396119/using-jquery-delay-with-css
-        $burgerMenuPanel.animate({'right': -$burgerMenuWidth}, 450, 'swing').delay(450).queue(function (next) { 
-            $burgerMenuPanel.css('display', 'none'); 
-            next();
-        });
+        // Hide Menu Panel
+        $burgerMenuPanel.hide(750);
+
+        // Toggle Buttons
+        $('.hamburger-icon').css('display', 'block');
+        $('#X1').css('display', 'none');
+        $('#X2').css('display', 'none');
+
+        // Change Boolean
         isHiddenMenu = true;
     }
 }
