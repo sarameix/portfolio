@@ -198,11 +198,12 @@ a {
     justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
-    z-index: 0;
 }
 
 .project {
-    background-color: rgb(81, 147, 167);
+    background-image: url('../images/image-swap-01.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
     position: relative;
     width: 100%;
     height: 100%;
@@ -214,7 +215,9 @@ a {
 }
 
 .project > * {
+    color: white;
     display: none;
+    z-index: 1;
 }
 
 #project-container > a {
@@ -230,6 +233,7 @@ a {
     height: 100%;
     border-radius: 20px;
     background-color: rgba(0,0,0,0.3);
+    z-index: 0;
 }
 
 /**********/
@@ -237,14 +241,25 @@ a {
 /**********/
 
 .social-media {
-    color: rgb(33, 110, 183);
+    background-color: rgb(33, 110, 183);
+    color: rgb(255, 255, 255);
     font-size: 20px;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 50px;
     cursor: pointer;
     margin: 0 1em .6em 1em;
 }
 
+.social-media > img {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+
 .social-media:hover {
-    color: rgb(199, 83, 156);
+    background-color: rgb(199, 83, 156);
 }
 
 #gradient-footer {

@@ -16,7 +16,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 0;
+    z-index: 1;
 }
 
 footer {
@@ -85,6 +85,7 @@ a {
     margin: 0px 0 18px 0;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 6px 7px rgba(31, 32, 33, 0.657);
+    z-index: 2;
 }
 
 /*****************************/
@@ -173,7 +174,7 @@ a {
     width: 300px;
     height: 100%;
     background-color: rgb(50, 125, 196);
-    z-index: 2;
+    z-index: 3;
 }
 
 /***********************/
@@ -186,6 +187,19 @@ a {
     justify-content: center;
 }
 
+#overlay {
+    width: 98%;
+    height: calc(55vw);
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.15);
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
 
 #art-image {
     background-image: url("../images/image-swap-01.jpg");
@@ -195,13 +209,36 @@ a {
     height: calc(55vw);
     margin: auto;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    z-index: -2;
+}
+
+#intro-text {
+    color: white;
+    font-family: 'Edu SA Beginner', cursive;
+    font-weight: 400;
+    font-size: calc(4vw);
+    text-align: left;
+    margin: 0 auto;
+    z-index: 2;
+    text-shadow: 0px 0px 15px rgb(45, 45, 45);
+    transform: translate(-3em, 0);
+    user-select: none;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
 }
 
 #name-text {
-    font-size: calc(6vw);
+    font-size: calc(7vw);
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    z-index: 2;
+    text-shadow: 0px 0px 20px rgb(45, 45, 45);
+    user-select: none;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
 }
 
 /**********/
@@ -209,14 +246,25 @@ a {
 /**********/
 
 .social-media {
-    color: rgb(33, 110, 183);
+    background-color: rgb(33, 110, 183);
+    color: rgb(255, 255, 255);
     font-size: 20px;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 50px;
     cursor: pointer;
     margin: 0 1em .6em 1em;
 }
 
+.social-media > img {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+
 .social-media:hover {
-    color: rgb(199, 83, 156);
+    background-color: rgb(199, 83, 156);
 }
 
 #gradient-footer {

@@ -229,14 +229,25 @@ a {
 /**********/
 
 .social-media {
-    color: rgb(33, 110, 183);
+    background-color: rgb(33, 110, 183);
+    color: rgb(255, 255, 255);
     font-size: 20px;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 50px;
     cursor: pointer;
     margin: 0 1em .6em 1em;
 }
 
+.social-media > img {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+
 .social-media:hover {
-    color: rgb(199, 83, 156);
+    background-color: rgb(199, 83, 156);
 }
 
 #gradient-footer {

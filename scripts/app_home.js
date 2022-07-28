@@ -75,5 +75,5 @@ $(() => {
     $('#hamburger-menu-button').on('click', toggleBurger);
 
     // Set Up Image Toggle on Click
-    $('#art-image').on('click', toggleImage);
+    $('#overlay').on('click', toggleImage);
 })
