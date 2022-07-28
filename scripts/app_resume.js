@@ -41,6 +41,18 @@ const toggleBurger = () => {
     }
 }
 
+// Function to Turn Resume Blue
+const turnResumeBlue = () => {
+    $('#resume-header').css('background-color', 'rgb(201, 221, 247)');
+    $('#resume-body').css('background-color', 'rgb(225, 235, 248)');
+}
+
+// Function to Turn Resume Pink
+const turnResumePink = () => {
+    $('#resume-header').css('background-color', 'rgb(247, 201, 222)');
+    $('#resume-body').css('background-color','rgb(248, 225, 238)');
+}
+
 ////////////////////////////
 // * EXECUTE AFTER LOAD * //
 ////////////////////////////
@@ -49,4 +61,29 @@ const toggleBurger = () => {
 $(() => {
     // Set Up Hamburger Menu Button to Toggle Menu
     $('#hamburger-menu-button').on('click', toggleBurger);
+
+    // Add Hover Events to Resume Header
+    // Mouse Enter
+    $('#resume-header').on(
+        'mouseenter', 
+        turnResumePink
+    );
+    // Mouse Exit
+    $('#resume-header').on(
+        'mouseleave', 
+        turnResumeBlue
+    );
+
+    // Add Hover Events to Resume Body
+    // Mouse Enter
+    $('#resume-body').on(
+        'mouseenter', 
+        turnResumePink
+    );
+    // Mouse Exit
+    $('#resume-body').on(
+        'mouseleave', 
+        turnResumeBlue
+    );
+      
 })

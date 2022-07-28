@@ -26,18 +26,29 @@ footer {
 }
 
 h1 {
-    margin-top: 162px;
+    font-size: 42px;
     text-align: center;
     margin-bottom: 0;
 }
 
+h2, .title {
+    text-transform: uppercase;
+}
+
 h3, h5 {
+    font-family: 'Edu SA Beginner', cursive;
+    font-weight: 400;
     text-indent: 30px;
 }
 
 a {
     text-decoration: none;
     color: black;
+}
+
+li {
+    font-family: 'Edu SA Beginner', cursive;
+    font-weight: 400;
 }
 
 /***************************/
@@ -190,6 +201,22 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 60px;
+}
+
+#resume-header {
+    background-color: rgb(201, 221, 247);
+    padding: 0 2rem;
+    border: 2px solid black;
+    border-bottom-style: dashed;
+    margin-top: 162px;
+}
+
+#resume-body {
+    background-color: rgb(225, 235, 248);
+    padding: 0 2rem;
+    border: 2px solid black;
+    border-top-style: none;
 }
 
 .resume-item {
@@ -197,13 +224,19 @@ a {
 }
 
 #contact {
+    padding: .5rem 2rem;
+    margin-bottom: 20px;
     display: flex;
+    font-size: 20px;
     flex-direction: row;
     justify-content: center;
 }
 
 .contact-item {
     padding: 0 1em;
+    margin: 3px 0;
+    font-family: 'Edu SA Beginner', cursive;
+    font-weight: 400;
 }
 
 .education {
@@ -218,10 +251,17 @@ a {
     display: flex;
     flex-direction: column;
     margin-left: 30px;
+    margin-bottom: 15px;
 }
 
 .skills {
     margin-top: 0;
+    font-family: 'Edu SA Beginner', cursive;
+    font-weight: 400;
+}
+
+span {
+    text-transform: uppercase;
 }
 
 /**********/
