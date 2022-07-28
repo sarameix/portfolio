@@ -8,6 +8,7 @@ body {
 
 header {
     top: 0;
+    left: 0;
     text-transform: uppercase;
     position: fixed;
     width: 100%;
@@ -19,6 +20,7 @@ header {
 }
 
 footer {
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,6 +81,7 @@ a {
     height: 6px;
     width: 100%;
     top: 120px;
+    left: 0;
     margin: 0px 0 18px 0;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 6px 7px rgba(31, 32, 33, 0.657);
@@ -179,11 +182,14 @@ a {
 
 #img-swap {
     margin-top: 162px;
+    display: flex;
+    justify-content: center;
 }
 
 
 #art-image {
     width: 100%;
+    max-width: 1600px;
 }
 
 #name-text {
@@ -221,7 +227,7 @@ a {
 /*****************/
 
 /* For mobile phones: */
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .nav {
         display: none;
     }
