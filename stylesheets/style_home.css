@@ -188,15 +188,20 @@ a {
 
 
 #art-image {
+    background-image: url("../images/image-swap-01.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
     width: 100%;
-    max-width: 1600px;
+    height: calc(55vw);
+    margin: auto;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #name-text {
-    position: absolute;
-    top: 50%;
-    left: 25%;
-    transform: translate(-0%, -0%);
+    font-size: calc(6vw);
 }
 
 /**********/

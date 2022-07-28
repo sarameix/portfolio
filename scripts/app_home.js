@@ -5,6 +5,18 @@
 // Variable Tracking if Hamburger Menu is Open
 let isHiddenMenu = true;
 
+// Array with Image Names
+const imageArray = [
+    "url('./images/image-swap-01.jpg')",
+    "url('./images/image-swap-02.jpg')",
+    "url('./images/image-swap-03.jpg')",
+    "url('./images/image-swap-04.jpg')",
+    "url('./images/image-swap-05.jpg')"
+];
+
+// Index Tracker
+let currentImageIndex = 0;
+
 //////////////////////////////
 // * FUNCTION DECLARATION * //
 //////////////////////////////
@@ -41,6 +53,18 @@ const toggleBurger = () => {
     }
 }
 
+// Function to Toggle Home Page Image
+const toggleImage = () => {
+    // Getting Index for Replacing Image
+    currentImageIndex++;
+    if (currentImageIndex === imageArray.length) {
+        currentImageIndex = 0;
+    }
+
+    // Replacing Image on Page
+    $('#art-image').css('background-image', imageArray[currentImageIndex]);
+}
+
 ////////////////////////////
 // * EXECUTE AFTER LOAD * //
 ////////////////////////////
@@ -49,4 +73,7 @@ const toggleBurger = () => {
 $(() => {
     // Set Up Hamburger Menu Button to Toggle Menu
     $('#hamburger-menu-button').on('click', toggleBurger);
+
+    // Set Up Image Toggle on Click
+    $('#art-image').on('click', toggleImage);
 })
