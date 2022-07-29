@@ -344,7 +344,7 @@ a {
     .social-media {
         width: 12%;
         height: 12vw;
-        padding: 5px;
+        padding: 1vw;
         border-radius: 100px;
         margin: 1vw 4vw;
     }
@@ -353,6 +353,7 @@ a {
         width: 10vw;
         height: 10vw;
         margin-top: 1vw;
+        margin-left: 1vw;
     }
 
 }

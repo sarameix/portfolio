@@ -299,6 +299,27 @@ p {
 
     h1 {
         margin-top: 30vw;
+        margin-bottom: 4vw;
+        font-size: 86px;
+    }
+
+    img {
+        width: 45vw;
+        height: 45vw;
+        margin-bottom: 4vw;
+    }
+
+    p {
+        font-size: 50px;
+        width: 78%;
+    }
+
+    p:first-of-type {
+        margin-bottom: 0;
+    }
+
+    #description {
+        margin-bottom: 6vw;
     }
 
     /*** Footer Adustments ***/
@@ -306,7 +327,7 @@ p {
     .social-media {
         width: 12%;
         height: 12vw;
-        padding: 5px;
+        padding: 1vw;
         border-radius: 100px;
         margin: 1vw 4vw;
     }
@@ -315,6 +336,7 @@ p {
         width: 10vw;
         height: 10vw;
         margin-top: 1vw;
+        margin-left: 1vw;
     }
 
 }
