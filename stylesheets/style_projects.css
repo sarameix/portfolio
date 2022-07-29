@@ -277,10 +277,78 @@ a {
 
 /* For mobile phones and tablets: */
 @media only screen and (max-width: 1025px) {
+
+    /*** Header Adustments ***/
+
     .nav {
         display: none;
     }
-    #hamburger-menu-button {
-        display: flex;
+    
+    header {
+        height: 25vw;
+        background-color: white;
     }
+
+    #gradient-header {
+        top: 25vw;
+
+    }
+    
+    #home-button {
+        width: 23%;
+        height: 23vw;
+    }
+    
+    #hamburger-menu-button {
+        border-radius: 20px;
+        display: flex;
+        width: 20%;
+        height: 20vw;
+    }
+
+    #X1, #X2 {
+        width: 9%;
+        height: 13vw;
+    }
+
+    #hamburger-menu-panel {
+        width: 55%;
+    }
+
+    .hamburger-nav {
+        font-size: 68px;
+    }
+
+    .hamburger-nav:first-of-type {
+        margin-top: 26vw;
+    }
+
+    .divider {
+        width: 75%;
+        height: 2px;
+        margin: 0 0 0 8vw;
+    }
+
+    /*** Body Adustments ***/
+
+    h1 {
+        margin-top: 30vw;
+    }
+
+    /*** Footer Adustments ***/
+
+    .social-media {
+        width: 12%;
+        height: 12vw;
+        padding: 5px;
+        border-radius: 100px;
+        margin: 1vw 4vw;
+    }
+    
+    .social-media > img {
+        width: 10vw;
+        height: 10vw;
+        margin-top: 1vw;
+    }
+
 }
