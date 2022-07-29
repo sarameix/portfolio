@@ -162,31 +162,38 @@ $(() => {
 
     // * RESUME HEADER *
 
-    // Add Hover Events to Resume Header
-    // Mouse Enter
-    $('#resume-header').on(
-        'mouseenter', 
-        turnResumePink
-    );
-    // Mouse Exit
-    $('#resume-header').on(
-        'mouseleave', 
-        turnResumeBlue
-    );
+    if($(window).width() > 1025)
+    {
+        // Add Hover Events to Resume Header
+        // Mouse Enter
+        $('#resume-header').on(
+            'mouseenter', 
+            turnResumePink
+        );
+        // Mouse Exit
+        $('#resume-header').on(
+            'mouseleave', 
+            turnResumeBlue
+        );
+    }
+    
 
     // * RESUME BODY *
 
-    // Add Hover Events to Resume Body
-    // Mouse Enter
-    $('#resume-body').on(
-        'mouseenter', 
-        turnResumePink
-    );
-    // Mouse Exit
-    $('#resume-body').on(
-        'mouseleave', 
-        turnResumeBlue
-    );
+    if($(window).width() > 1025)
+    {
+        // Add Hover Events to Resume Body
+        // Mouse Enter
+        $('#resume-body').on(
+            'mouseenter', 
+            turnResumePink
+        );
+        // Mouse Exit
+        $('#resume-body').on(
+            'mouseleave', 
+            turnResumeBlue
+        );
+    }
 
     // * DOWNLOAD BUTTON *
 
