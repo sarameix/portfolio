@@ -374,12 +374,12 @@ span {
     }
     
     header {
-        height: 25vw;
+        height: 26vw;
         background-color: white;
     }
 
     #gradient-header {
-        top: 25vw;
+        top: 26vw;
 
     }
     
@@ -421,13 +421,17 @@ span {
     /*** Body Adustments ***/
 
     .resume-item {
-        width: 80%;
+        width: 84%;
     }
 
     #resume-header {
         margin-top: 34vw;
         border: 2px solid black;
         border-bottom-style: solid;
+    }
+
+    #resume-body {
+        margin-bottom: 2vw;
     }
 
     #contact {
@@ -456,18 +460,39 @@ span {
         font-size: 86px;
     }
 
+    .title {
+        font-size: 33px;
+    }
+    
+    h3 {
+        font-size: 32px;
+    }
+
+    h5, li {
+        font-size: 30px;
+    }
+
     .dropdown {
-        font-size: 46px;
+        font-size: 58px;
         margin-top: 5vw;
     }
 
     .dropdown:hover {
         color: black;
+        display: block;
     }
 
     .skills {
         font-size: 40px;
-        margin-bottom: 4vw;
+        margin-bottom: 5vw;
+    }
+
+    #skills-container {
+        margin-bottom: 2vw;
+    }
+
+    #open-resume:hover {
+        background-color: rgb(164, 200, 247);
     }
 
     /*** Footer Adustments ***/
