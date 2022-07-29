@@ -241,8 +241,8 @@ p {
 /* Media Queries */
 /*****************/
 
-/* For mobile phones: */
-@media (max-width: 768px) {
+/* For mobile phones and tablets: */
+@media only screen and (max-width: 1025px) {
     .nav {
         display: none;
     }
