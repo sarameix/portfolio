@@ -335,8 +335,17 @@ a {
 
     /*** Body Adustments ***/
 
-    h1 {
+    #img-swap {
         margin-top: 30vw;
+        margin-bottom: 5vw;
+    }
+
+    #intro-text {
+        font-size: calc(6vw);
+    }
+    
+    #name-text {
+        font-size: calc(10vw);
     }
 
     /*** Footer Adustments ***/
