@@ -1,0 +1,424 @@
+/**********************/
+/* Standard HTML Tags */
+/**********************/
+
+body {
+    text-align: center;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+header {
+    top: 0;
+    left: 0;
+    text-transform: uppercase;
+    position: fixed;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+footer {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+h4 {
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: 22px;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+/***************************/
+/* Desktop Navigation Menu */
+/***************************/
+
+#header-container {
+    background-color: white;
+    height: 125px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 0;
+}
+
+#home-button {
+    width: 100px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+#pages-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    right: 0;
+}
+
+.nav {
+    color: rgb(33, 110, 183);
+    font-size: 30px;
+    padding: 0 1em;
+    margin: 0px;
+    display: block;
+}
+
+.nav:hover {
+    color: rgb(199, 83, 156);
+}
+
+#gradient-header {
+    position: fixed;
+    height: 6px;
+    width: 100%;
+    top: 120px;
+    left: 0;
+    margin: 0px 0 18px 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 6px 7px rgba(31, 32, 33, 0.344);
+    z-index: 1;
+}
+
+/*****************************/
+/* Hamburger Navigation Menu */
+/*****************************/
+
+.hamburger-nav {
+    color: white;
+    font-size: 30px;
+    padding: .5em;
+    text-align: right;
+    display: block;
+    margin: 0 20px 0 0;
+}
+
+.hamburger-nav:hover {
+    color: rgb(253, 101, 197);
+}
+
+.hamburger-nav:first-of-type {
+    margin-top: 125px;
+}
+
+.divider {
+    background-color: white;
+    width: 70%;
+    height: 1px;
+    margin: 0 0 0 60px;
+}
+
+#hamburger-menu-button {
+    position: fixed;
+    right: 18px;
+    top: 18px;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(50, 125, 196);
+    border-radius: 8px;
+    border: 1px solid white;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.hamburger-icon {
+    background-color: white;
+    width: 60%;
+    height: 8%;
+    margin: 6% 0;
+    border-radius: 2px;
+    display: block;
+}
+
+#X1 {
+    width: 52px;
+    height: 7px;
+    background-color: white;
+    position: absolute;
+    border-radius: 5px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    display: none;
+}
+
+#X2 {
+    position: relative;
+    width: 52px;
+    height: 7px;
+    background-color: white;
+    border-radius: 5px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    display: none;
+}
+
+#hamburger-menu-panel {
+    position: fixed;
+    display: none;
+    top: 0px;
+    right: 0px;
+    width: 300px;
+    height: 100%;
+    background-color: rgb(50, 125, 196);
+    z-index: 2;
+}
+
+/********************/
+/* Project Elements */
+/********************/
+
+#project-container {
+    margin-top: 162px;
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(71, 99, 71);
+    border: 2px solid black
+}
+
+.project-title {
+    margin: 0;
+}
+
+.project-description {
+    font-family: 'Edu SA Beginner', cursive;
+    text-align: left;
+    font-size: 28px;
+    width: 80%;
+    text-indent: 32px;
+    margin-top: .75em;
+    margin-bottom: 1.5em;
+}
+
+.title {
+    background-color: rgb(183, 206, 181);
+    text-transform: uppercase;
+    width: max-content;
+    padding: .5em;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.divider {
+    background-color: rgb(140, 147, 158);
+    width: 95%;
+    height: 2px;
+    border-radius: 20px;
+    margin: 1em 0 3em 0;
+}
+
+#tool-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.tool-name {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.landscaper {
+    font-family: 'Edu SA Beginner', cursive;
+    font-weight: 400;
+    background-color: rgb(126, 157, 123);
+    display: inline-block;
+    padding: 0 1em 1em 1em;
+    border: 3px solid black;
+    width: max-content;
+    margin: 0 1em .5em 0;
+}
+
+/**********/
+/* Footer */
+/**********/
+
+.social-media {
+    background-color: rgb(33, 110, 183);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 0 1em .6em 1em;
+}
+
+.social-media > img {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+
+.social-media:hover {
+    background-color: rgb(199, 83, 156);
+}
+
+#gradient-footer {
+    height: 6px;
+    width: 100%;
+    margin: 30px 0 18px 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px -6px 7px rgb(154, 157, 163);
+}
+
+/*****************/
+/* Media Queries */
+/*****************/
+
+/* For mobile phones and tablets: */
+@media only screen and (max-width: 1025px) {
+
+    /*** Header Adustments ***/
+
+    .nav {
+        display: none;
+    }
+    
+    header {
+        height: 26vw;
+        background-color: white;
+    }
+
+    #gradient-header {
+        height: 8px;
+        top: 25vw;
+    }
+    
+    #home-button {
+        width: 23%;
+        height: 23vw;
+    }
+    
+    #hamburger-menu-button {
+        border-radius: 20px;
+        display: flex;
+        width: 20%;
+        height: 20vw;
+    }
+
+    #X1, #X2 {
+        width: 9%;
+        height: 13vw;
+    }
+
+    #hamburger-menu-panel {
+        width: 55%;
+    }
+
+    .hamburger-nav {
+        font-size: 68px;
+    }
+
+    .hamburger-nav:first-of-type {
+        margin-top: 26vw;
+    }
+
+    .divider {
+        width: 75%;
+        height: 2px;
+        margin: 0 0 0 8vw;
+    }
+
+    /*** Body Adustments ***/
+
+    h1 {
+        margin-top: 30vw;
+        margin-bottom: 4vw;
+        font-size: 86px;
+    }
+
+    #project-container > a {
+        width: 70vw;
+        height: 40vw;
+        padding: 0px;
+        margin: 1vw 4vw 8vw 4vw;
+    }
+
+    #project-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .project {
+        position: relative;
+        /* width: 100vw;
+        height: 100vw; */
+        /* padding: 0 0 4vw 0; */
+        border-radius: 30px;
+    }
+    
+
+    /*** Footer Adustments ***/
+
+    .social-media {
+        width: 12%;
+        height: 12vw;
+        padding: 1vw;
+        border-radius: 100px;
+        margin: 1vw 4vw;
+    }
+    
+    .social-media > img {
+        width: 10vw;
+        height: 10vw;
+        margin-top: 1vw;
+    }
+
+}
