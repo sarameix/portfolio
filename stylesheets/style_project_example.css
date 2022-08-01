@@ -29,13 +29,18 @@ footer {
 
 h1 {
     font-size: 42px;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-weight: 400;
 }
 
 h4 {
+    font-weight: 400;
     font-size: 25px;
     margin-top: 0;
     margin-bottom: 10px;
-    text-transform: uppercase;
 }
 
 h5 {
@@ -219,8 +224,8 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(71, 99, 71);
-    border: 2px solid black
+    background-color: rgb(85, 114, 85);
+    border: 3px solid black
 }
 
 .project-title {
@@ -237,12 +242,25 @@ a {
     margin-bottom: 1.5em;
 }
 
-.title {
-    background-color: rgb(183, 206, 181);
+.title1 {
+    background-color: rgb(189, 212, 187);
     text-transform: uppercase;
     width: max-content;
-    padding: .5em;
-    border: 2px solid black;
+    padding: .25em .6em;
+    border: 3px solid rgb(25, 34, 25);
+    border-radius: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title2 {
+    background-color: rgb(154, 178, 152);
+    font-size: 30px;
+    text-transform: uppercase;
+    width: max-content;
+    padding: .15em 1.5em;
+    border: 3px solid rgb(25, 34, 25);
+    border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -255,6 +273,19 @@ a {
     margin: 1em 0 3em 0;
 }
 
+.divider2 {
+    background-color: rgb(43, 50, 42);
+    width: 85%;
+    height: 3px;
+    border-radius: 20px;
+    margin: 2.75em 0 1.75em 0;
+}
+
+.divider2:first-of-type {
+    margin-top: .75em;
+    margin-bottom: 1em;
+}
+
 #tool-box {
     display: flex;
     flex-direction: row;
@@ -262,23 +293,58 @@ a {
     justify-content: center;
     align-items: center;
     padding: 1em;
+    margin: 0 1em 2em 1em;
 }
 
 .tool-name {
+    font-size: 26px;
     text-transform: uppercase;
     text-align: center;
     font-family: 'Gloria Hallelujah', cursive;
+    margin-bottom: 0;
 }
 
-.landscaper {
+.landscaper-item {
     font-family: 'Edu SA Beginner', cursive;
-    font-weight: 400;
+    font-size: 20px;
     background-color: rgb(126, 157, 123);
     display: inline-block;
     padding: 0 1em 1em 1em;
-    border: 3px solid black;
+    border: 2px solid rgb(41, 54, 40);
+    border-radius: 8px;
     width: max-content;
-    margin: 0 1em .5em 0;
+    margin: 0 .5em .5em .5em;
+}
+
+button {
+    background-color: rgb(198, 213, 197);
+    font-family: 'Edu SA Beginner', cursive;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: .25em .75em;
+    border: 2px solid rgb(41, 54, 40);
+    border-radius: 10px;
+    margin-top: .5em;
+    margin-bottom: .25em;
+}
+
+button:hover {
+    background-color: rgb(162, 178, 161);
+}
+
+#restart {
+    background-color: rgb(164, 178, 163);
+    margin-top: .5em;
+    margin-bottom: 0;
+}
+
+#restart:hover {
+    background-color: rgb(141, 156, 140);
+}
+
+#cut-grass {
+    margin-top: 0;
 }
 
 /**********/

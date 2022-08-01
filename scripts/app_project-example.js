@@ -154,6 +154,11 @@ const buyStudents = () => {
     user.boughtStudents = true;
 }
 
+// Restart Game
+const restartGame = () => {
+    location.reload();
+}
+
 ////////////////////////////
 // * EXECUTE AFTER LOAD * //
 ////////////////////////////
@@ -165,6 +170,7 @@ $(() => {
 
     // Function Mapping Lanscaper Buttons
     $(() => {
+        $('#restart').on('click', restartGame);
         $('#cut-grass').on('click', cutGrass);
         $('#scissors').on('click', buyScissors);
         $('#p-mower').on('click', buyPMower);
