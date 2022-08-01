@@ -358,6 +358,15 @@ a {
         border-radius: 30px;
     }
 
+    .overlay {
+        border-radius: 30px;
+        display: block;
+    }
+
+    .project > * {
+        display: block;
+    }
+
     h4 {
         font-size: 50px;
     }
