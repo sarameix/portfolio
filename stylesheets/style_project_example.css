@@ -465,22 +465,31 @@ button:hover {
     }
     
     .title1 {
-        font-size: 44px;
+        font-size: 54px;
         margin-top: 1em;
         margin-bottom: .15em;
     }
 
     .title2 {
-        font-size: 34px;
+        font-size: 44px;
         padding: .05em .6em;
     }
 
-    h3 {
+    button {
+        color: black;
         font-size: 30px;
     }
 
+    h3 {
+        font-size: 36px;
+    }
+
+    .tool-name {
+        font-size: 36px;
+    }
+
     .landscaper-item, h4 {
-        font-size: 26px;
+        font-size: 36px;
     }
 
     /*** Footer Adustments ***/
